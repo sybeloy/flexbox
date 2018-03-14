@@ -1,0 +1,185 @@
+* {
+margin:0;
+padding:0;
+font-family:Arial;
+cursor: default;
+}
+
+body {
+display:flex;
+background-color:#6fa9ed;
+}
+
+a {
+text-decoration:none;
+text-transform:lowercase;
+padding:5px;
+color:#4483ce;
+border:1px solid #4483ce;
+float:right;
+text-align:center;
+}
+
+a:hover {
+background-color:#4483ce;
+color:#fff;
+}
+
+nav {
+color:#fff;
+padding:10px;
+width:15vw;
+height:100vh;
+background-color:#6fa9ed;
+border-right:1px solid #5d91cc;
+float:left;
+text-align:center;
+min-width:200px;
+}
+
+#status {
+margin-top:5px;
+border:1px solid #fff;
+border-radius:15px;
+color:#fff;
+padding:7px;
+font-size:.7em;
+}
+
+.interests {
+margin-top:15px;
+border-top:4px solid #5d91cc;
+text-align:center;
+font-size:.8em;
+padding-top:5px;
+}
+.interests li:hover{
+	background-color: white;
+	color: #5d91cc;
+	cursor: pointer;
+}
+
+.interests li {
+padding:3px;
+text-transform:uppercase;
+}
+
+.username {
+font-weight:700
+}
+
+nav img {
+margin-top:10px;
+margin-bottom:15px;
+width:60%;
+border-radius:3px;
+box-shadow:0 0 12px rgba(0,0,0,0.6);
+align-self:center
+}
+
+.mainPage {
+width:90vw;
+background-color:#f7f7f7;
+width:85vw;
+display:flex;
+flex-direction:column;
+flex-wrap:nowrap
+}
+
+header {
+height:10vh;
+background-color:#4483ce;
+box-shadow:0 0 12px rgba(0,0,0,0.5)
+}
+
+.shadowBox {
+box-shadow:0 0 12px rgba(0,0,0,0.5) inset
+}
+
+.mainArticle {
+float:left;
+overflow:auto;
+display:flex;
+flex-wrap:wrap;
+flex-direction:row;
+justify-content:center;
+align-items:flex-start;
+width:100%;
+padding-top:10px;
+}
+
+section {
+border:0 1px 1px 1px solid #f2f2f2;
+border-radius:3px;
+box-shadow:0 0 6px rgba(0,0,0,0.7);
+background-color:#fff;
+align-content:flex-start;
+margin:10px;
+width:200px;
+height:200px
+}
+
+section:hover{
+	box-shadow:0 0 11px rgba(0,0,0,0.5);
+	cursor: default;
+}
+p {
+font-size:.95em
+}
+
+.blockHeader-blue {
+border-top:1px solid #6fa9ed;
+border-radius:3px
+}
+
+section p,
+section h1 {
+padding:5px
+}
+
+.blockHeaderRightside {
+color:#fff;
+background-color:#6fa9ed
+}
+
+@media screen and (max-width: 800px) {
+section {
+margin:5px;
+margin-left:10px;
+margin-right:10px
+}
+
+body {
+overflow:auto
+}
+
+.sectionOne,.sectionTwo {
+flex-direction:column;
+flex-wrap:wrap
+}
+
+nav {
+display:none
+}
+
+.mainPage {
+background-color:#f7f7f7;
+width:100vw
+}
+
+.mainArticle {
+height:auto
+}
+
+section {
+margin-bottom:15px
+}
+
+.sectionTwo:last-child {
+margin-bottom:20px
+}
+
+section {
+flex-grow:1
+}
+}
